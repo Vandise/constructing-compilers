@@ -1,0 +1,86 @@
+/* ---------------------- GLOBAL DEFAULTS ---------------------- */
+body {
+  font-family: "HelveticaNeue-Light", Helvetica, "Segoe UI", Arial, freesans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+pre {
+  color:     #c5c8c6;
+  font-size: 45%;  
+  border:    none;
+  padding:   1.5em;
+  border-radius: 10px;
+  background-color: #1d1f21;
+  margin-bottom:    2em;
+}
+
+p {
+  font-size:     11px;
+  font-weight:   500;
+  margin:        0px;
+  padding:       0px 0px 7px 0px;
+}
+
+h3, h4, h5 {
+  color:  #2D308B;
+  padding: 0.4em 0em 0.5em 0em;
+  margin:  0em;
+  font-weight: 600;
+  font-size:   90%;
+}
+
+section.title-page, section.dedication {
+  text-align: center;  
+}
+
+/* ---------------------- CHAPTER HEADERS ---------------------- */
+
+section.chapter {
+  text-align:    right;
+  margin-bottom: 7%;  
+}
+
+section.chapter h2 {
+  color:          #2D308B;
+  font-weight:    100;
+  font-size:      65%;
+  text-transform: uppercase;
+  margin-bottom:  3em;
+}
+
+section.chapter p {
+  font-size: 140%;  
+}
+
+section.chapter .number {
+  font-size: 150%;
+}
+
+section.chapter hr {
+  height: 10px;
+}
+
+/* ---------------------- PAGE SECTIONS ---------------------- */
+
+section.image-left {
+
+}
+
+section.image-left figure {
+  float: left;
+  width: 45%;
+  margin: 0em 1em 0.5em 0em;
+}
+
+
+
+
+/* ---------------------- MEDIA PRINTS & BREAKS ---------------------- */
+
+@media print {
+  section.dedication {
+    page-break-before: always;
+  }
+  section.chapter:not(:first-of-type) {
+    page-break-before: always;
+  }
+}
